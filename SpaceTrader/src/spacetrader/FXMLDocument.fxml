@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.media.*?>
 <?import javafx.scene.text.*?>
@@ -9,15 +10,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="583.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="spacetrader.FXMLDocumentController">
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.FXMLDocumentController">
     <children>
-        <Label fx:id="label" layoutX="135.0" layoutY="32.0" minHeight="16" minWidth="69" text="Space Traders">
+      <ImageView fitHeight="479.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/moon_blue_813.jpg" />
+         </image>
+      </ImageView>
+        <Label fx:id="label" layoutX="116.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="150.0" prefWidth="443.0" text="Space&#10;    Traders" textFill="#ffff2f">
          <font>
-            <Font name="AR BONNIE" size="79.0" />
+            <Font name="OCR A Extended" size="64.0" />
          </font></Label>
-      <Button alignment="CENTER" layoutX="239.0" layoutY="151.0" mnemonicParsing="false" text="New Game" />
-      <Button alignment="CENTER" layoutX="238.0" layoutY="192.0" mnemonicParsing="false" text="Load Game" />
-      <Button alignment="CENTER" layoutX="249.0" layoutY="231.0" mnemonicParsing="false" text="Options" />
+      <Button alignment="CENTER" blendMode="HARD_LIGHT" layoutX="61.0" layoutY="295.0" mnemonicParsing="false" text="New Game" textAlignment="CENTER" textFill="#ffff2f">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></Button>
+      <Button alignment="CENTER" blendMode="HARD_LIGHT" layoutX="55.0" layoutY="341.0" mnemonicParsing="false" text="Load Game" textFill="#ffff2f">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></Button>
+      <Button alignment="CENTER" blendMode="HARD_LIGHT" layoutX="66.0" layoutY="387.0" mnemonicParsing="false" text="Options" textFill="#ffff2f">
+         <font>
+            <Font name="OCR A Extended" size="18.0" />
+         </font></Button>
     </children>
    <opaqueInsets>
       <Insets />
