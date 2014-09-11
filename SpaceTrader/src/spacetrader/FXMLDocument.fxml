@@ -10,29 +10,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="loadingPane" prefHeight="430.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="loadingPane" prefHeight="442.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="spacetrader.FXMLDocumentController">
     <children>
-      <ImageView fx:id="imageView" fitHeight="479.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imageView" fitHeight="457.0" fitWidth="689.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../resources/moon_blue_813.jpg" />
+            <Image url="@../../resources/STS115_Atlantis_undock_ISS_edit2.jpg" />
          </image>
       </ImageView>
-        <Label fx:id="label" layoutX="116.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="150.0" prefWidth="443.0" text="Space&#10;    Traders" textFill="#ffff2f">
+        <Label fx:id="label" layoutX="216.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="150.0" prefWidth="443.0" text="Space&#10;    Traders" textFill="#ffff2f">
          <font>
             <Font name="OCR A Extended" size="64.0" />
          </font>
       </Label>
-      <Button fx:id="loadGameButton" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="55.0" layoutY="341.0" mnemonicParsing="false" onAction="#handleLoadButtonAction" text="Load Game" textFill="#ffff2f">
+      <Button fx:id="loadGameButton" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="61.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleLoadButtonAction" text="Load Game">
          <font>
             <Font name="OCR A Extended" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="newGameButton" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="61.0" layoutY="295.0" mnemonicParsing="false" onAction="#handleNewGameButtonAction" text="New Game" textAlignment="CENTER" textFill="#ffff2f">
+      <Button fx:id="newGameButton" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="66.0" layoutY="244.0" mnemonicParsing="false" onAction="#handleNewGameButtonAction" text="New Game" textAlignment="CENTER">
          <font>
             <Font name="OCR A Extended" size="18.0" />
          </font>
       </Button>
-      <Button fx:id="optionsButton" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="66.0" layoutY="387.0" mnemonicParsing="false" onAction="#handleOptionButtonAction" text="Options" textFill="#ffff2f">
+      <Button fx:id="optionsButton" alignment="CENTER" blendMode="HARD_LIGHT" layoutX="72.0" layoutY="336.0" mnemonicParsing="false" onAction="#handleOptionButtonAction" text="Options">
          <font>
             <Font name="OCR A Extended" size="18.0" />
          </font>
