@@ -10,12 +10,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
 <AnchorPane id="AnchorPane" fx:id="loadingPane" prefHeight="430.0" prefWidth="583.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
       <ImageView fx:id="imageView" fitHeight="479.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../Desktop/moon_blue_813.jpg" />
+            <Image url="@../../resources/moon_blue_813.jpg" />
          </image>
       </ImageView>
         <Label fx:id="label" layoutX="116.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="150.0" prefWidth="443.0" text="Space&#10;    Traders" textFill="#ffff2f">
