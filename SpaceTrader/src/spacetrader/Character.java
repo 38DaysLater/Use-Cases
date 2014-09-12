@@ -6,7 +6,7 @@
 
 package spacetrader;
 
-public class Character() {
+public class Character {
 
 	//for constructor
 	String name;
