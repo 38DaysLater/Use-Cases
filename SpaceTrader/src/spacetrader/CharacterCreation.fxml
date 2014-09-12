@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.effect.*?>
@@ -15,14 +16,15 @@
         <URL value="@charactercreation.css" />
     </stylesheets>
    <children>
-      <VBox layoutX="86.0" layoutY="152.0" prefHeight="192.0" prefWidth="469.0">
+      <VBox layoutX="204.0" layoutY="150.0" prefHeight="192.0" prefWidth="469.0">
          <children>
-            <Slider majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#pilotDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="pilotSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#pilotDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
                         <Glow />
-                     </input></SepiaTone>
+                     </input>
+                  </SepiaTone>
                </effect>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -34,12 +36,13 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Slider>
-            <Slider majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#flightDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="flightSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#flightDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
                         <Glow />
-                     </input></SepiaTone>
+                     </input>
+                  </SepiaTone>
                </effect>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -51,12 +54,13 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Slider>
-            <Slider majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#tradeDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="tradeSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#tradeDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
                         <Glow />
-                     </input></SepiaTone>
+                     </input>
+                  </SepiaTone>
                </effect>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -68,12 +72,13 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Slider>
-            <Slider majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#engineerDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="engineerSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#engineerDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
                         <Glow />
-                     </input></SepiaTone>
+                     </input>
+                  </SepiaTone>
                </effect>
                <padding>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -87,11 +92,7 @@
             </Slider>
          </children>
       </VBox>
-      <TextFlow layoutX="-2.0" prefHeight="400.0" prefWidth="379.0">
-         <children>
-            <TextFlow prefHeight="115.0" prefWidth="528.0" />
-         </children></TextFlow>
-      <Button layoutX="392.0" layoutY="355.0" mnemonicParsing="false" onAction="#okButton" text="Ok" />
-      <Button layoutX="466.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+      <Button fx:id="okBut" layoutX="392.0" layoutY="355.0" mnemonicParsing="false" onAction="#okButtonHandler" text="Ok" />
+      <Button fx:id="cancelBut" layoutX="466.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelButtonHandel" text="Cancel" />
    </children>
 </AnchorPane>
