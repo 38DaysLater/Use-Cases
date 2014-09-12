@@ -16,9 +16,9 @@
         <URL value="@charactercreation.css" />
     </stylesheets>
    <children>
-      <VBox layoutX="204.0" layoutY="150.0" prefHeight="192.0" prefWidth="469.0">
+      <VBox layoutX="90.0" layoutY="150.0" prefHeight="192.0" prefWidth="469.0">
          <children>
-            <Slider fx:id="pilotSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#pilotDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="pilotSlider" majorTickUnit="1.0" max="10.0" minorTickCount="0" onDragDone="#pilotDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
@@ -36,7 +36,7 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Slider>
-            <Slider fx:id="flightSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#flightDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="flightSlider" majorTickUnit="1.0" max="10.0" minorTickCount="0" onDragDone="#flightDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
@@ -54,7 +54,7 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Slider>
-            <Slider fx:id="tradeSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#tradeDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="tradeSlider" majorTickUnit="1.0" max="10.0" minorTickCount="0" onDragDone="#tradeDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
@@ -72,7 +72,7 @@
                   <Cursor fx:constant="OPEN_HAND" />
                </cursor>
             </Slider>
-            <Slider fx:id="engineerSlider" majorTickUnit="1.0" max="10.0" minorTickCount="1" onDragDone="#engineerDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
+            <Slider fx:id="engineerSlider" majorTickUnit="1.0" max="10.0" minorTickCount="0" onDragDone="#engineerDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
                <effect>
                   <SepiaTone>
                      <input>
@@ -92,7 +92,56 @@
             </Slider>
          </children>
       </VBox>
-      <Button fx:id="okBut" layoutX="392.0" layoutY="355.0" mnemonicParsing="false" onAction="#okButtonHandler" text="Ok" />
-      <Button fx:id="cancelBut" layoutX="466.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelButtonHandel" text="Cancel" />
+      <Button fx:id="okBut" layoutX="456.0" layoutY="355.0" mnemonicParsing="false" onAction="#okButtonHandler" text="Ok" />
+      <Button fx:id="cancelBut" layoutX="515.0" layoutY="355.0" mnemonicParsing="false" onAction="#cancelButtonHandel" text="Cancel" />
+      <VBox alignment="CENTER" depthTest="DISABLE" layoutY="161.0" prefHeight="200.0" prefWidth="100.0" spacing="22.0" AnchorPane.topAnchor="161.0">
+         <children>
+            <Label alignment="CENTER" blendMode="HARD_LIGHT" lineSpacing="10.0" text="Pilot" textAlignment="CENTER">
+               <font>
+                  <Font name="LilyUPC Italic" size="27.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label alignment="CENTER" blendMode="HARD_LIGHT" lineSpacing="10.0" text="Fighter" textAlignment="CENTER">
+               <font>
+                  <Font name="LilyUPC Italic" size="27.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label alignment="CENTER" blendMode="HARD_LIGHT" lineSpacing="10.0" text="Trainer" textAlignment="CENTER">
+               <font>
+                  <Font name="LilyUPC Italic" size="27.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label alignment="CENTER" blendMode="HARD_LIGHT" lineSpacing="10.0" text="Engineer" textAlignment="CENTER">
+               <font>
+                  <Font name="LilyUPC Italic" size="27.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+      <TextField layoutX="325.0" layoutY="38.0" opacity="0.33" prefHeight="57.0" prefWidth="203.0" promptText="Shepherd">
+         <font>
+            <Font name="LilyUPC" size="29.0" />
+         </font>
+      </TextField>
+      <Label blendMode="HARD_LIGHT" layoutX="90.0" layoutY="49.0" nodeOrientation="LEFT_TO_RIGHT" text="Enter Character Name:">
+         <font>
+            <Font name="LilyUPC Italic" size="34.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
