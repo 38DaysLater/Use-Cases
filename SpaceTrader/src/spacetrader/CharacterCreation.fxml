@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
@@ -16,6 +17,11 @@
         <URL value="@charactercreation.css" />
     </stylesheets>
    <children>
+      <ImageView depthTest="ENABLE" fitHeight="415.0" fitWidth="600.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="3.0">
+         <image>
+            <Image url="@resources/STS115_Atlantis_undock_ISS_edit2.jpg" />
+         </image>
+      </ImageView>
       <VBox layoutX="90.0" layoutY="150.0" prefHeight="192.0" prefWidth="469.0">
          <children>
             <Slider fx:id="pilotSlider" majorTickUnit="1.0" max="10.0" minorTickCount="0" onDragDone="#pilotDone" rotate="-5.0" showTickLabels="true" showTickMarks="true" snapToPixel="false" snapToTicks="true">
